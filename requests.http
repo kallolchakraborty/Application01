@@ -1,0 +1,28 @@
+### Practice HTTP requests
+
+### GET Users
+GET http://localhost:4004/catalog/Users
+
+### GET User by ID
+GET http://localhost:4004/catalog/Users(1004)
+customheader: 04@email.com
+
+### GET Projects
+GET http://localhost:4004/catalog/Projects
+
+### Add user via POST method
+POST http://localhost:4004/catalog/Users
+Content-Type: application/json
+
+{
+    "id": 1003,
+    "name": "Kallol03",
+    "email": "03@email.com",
+    "phone": "0000000003",
+    "gender": "Male",
+    "address_street": "add03",
+    "address_city": "city03",
+    "address_state": "state03",
+    "address_zip": "zip03",
+    "project_Id": 1
+}
